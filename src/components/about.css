@@ -1,0 +1,24 @@
+.About {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
+
+.info {
+  max-width: 100%;
+  display: inline-flex;
+  background: rgba(3, 156, 184, 0.76);
+  color: white
+}
+.col4 {
+  width: 40%;
+}
+
+.col6 {
+  width: 60%;
+}
+
+.offset-6 {
+  margin-left: 1%
+}

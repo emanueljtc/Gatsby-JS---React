@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Menu from './menu'
+import About from './about'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -29,7 +31,8 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <Menu />
+        {/*<div
           style={{
             margin: '0 auto',
             maxWidth: 960,
@@ -38,7 +41,8 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-        </div>
+        </div>*/}
+        <About />
       </>
     )}
   />
