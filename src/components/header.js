@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import './header.css'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'coral',
+      background: 'black',
       marginBottom: '1.45rem',
     }}
   >
@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 className="Title">
         <Link
           to="/"
           style={{
@@ -24,9 +24,10 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          
         </Link>
       </h1>
-    </div>
+      </div>
   </div>
 )
 
